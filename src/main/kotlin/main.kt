@@ -1,13 +1,15 @@
 
 
 fun main() {
-    var initialPosition: Position = Position(3, 3, Direction.E)
-    var rover: Rover = Rover(initialPosition)
 
+    var rover2 = Rover.instruction("3 3 E,   LRRMMRRRM")
+    var rover3 = Rover.instruction("1 3 N , LMLM LMLMM")
 
     println("start")
 
-    rover.instruction("3 3 E, MMRMMRMRRM")
+    rover2.print()
+    rover3.print()
+
 
 
 }
